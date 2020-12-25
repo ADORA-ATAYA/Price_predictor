@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Price Prediction</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<style type="text/css">
+	body
+	{
+	background:black;
+	background-image:url('download.jpg');
+	}
+		input{
+			background-color: grey!important;
+			border: 2px dotted white!important;
+		}
+		}
+	</style>
+</head>
+<body>
+         <br>
+	<h2  style="color:white;">
+		<span style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Predict Price of Your Vehicle!!!</span>
+	</h2>
+	<br>
+	<br>
+	<br>
+	<form method="post" enctype="multipart/form-data">{%csrf_token%}
+	<div class="container">
+		<form class="row g-3">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<div class="row">
+					<div class="col-md-6" style="color:white;">
+						<label for="symboling" >Symboling</label>
+						<input type="text" class="form-control" id="symboling" name="symbol">
+					</div>
+					<div class="col-md-6" style="color:white;">
+						<label for="fuel_type" >Fuel Type</label>
+						<input type="text" class="form-control" id="fuel_type" name="fuel">
+					</div>
+				</div><br>
+						<div class="row">
+                            <div class="col-md-3 col-6"  style="color:white;">
+							<label for="engine-size" >Engine Size</label>
+							<input type="text" name="e-size" class="form-control" id="engine-size">
+						</div>
+							<div class="col-6 col-md-3"  style="color:white;">
+								<label for="b-ratio">Bore Ratio</label>
+								<input type="text" name="b-ratio" class="form-control" id="b-ratio">
+							</div>
+							<div class="col-6 col-md-3"  style="color:white;">
+								<label for="stroke" >Stroke</label>
+								<input type="text" name="stroke" class="form-control" id="stroke">
+							</div>
+							<div class="col-6 col-md-3"  style="color:white;">
+								<label for="c-ratio" >Compression Ratio</label>
+								<input type="text" class="form-control" name="c-ratio" id="c-ratio">
+							</div>
+						</div><br>
+						<div class="row">
+							<div class="col-6 col-md-3"  style="color:white;">
+								<label for="h-power">Horse Power</label>
+								<input type="text" class="form-control" id="h-power" name="h-power">
+							</div>
+							<div class="col-6 col-md-3"  style="color:white;">
+								<label for="rpm" >Peak RPM</label>
+								<input name="rpm" type="text" class="form-control" id="rpm">
+							</div>
+							<div class="col-6 col-md-3"  style="color:white;">
+								<label for="mpg" >City MPG</label>
+								<input type="text" name="mpg" class="form-control" id="mpg">
+							</div>
+							<div class="col-6 col-md-3"  style="color:white;">
+								<label for="h-mpg" >Highway MPG</label>
+								<input type="text" name="h-mpg" class="form-control" id="h-mpg">
+							</div>
+						</div><br>
+							<div class="row">
+
+									<button type="submit" class="btn btn-primary my-3  btn-block">Predict Price</button>
+									<div style=color:white;font-size:40px;">
+										<center>
+       								<label>{{msg}}</label>
+										</center>
+  								     </div>
+								</div>
+
+							</div>
+						</form>
+					</div>
+			</form>
+<footer>
+	<br>
+	<p style="color: #f08080"><strong>&nbsp;&nbsp;&nbsp;&nbsp;All right Reserved.© copyright 2000-2021</strong></p></footer>
+		</body>
+      </html>
