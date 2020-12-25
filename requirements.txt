@@ -13,7 +13,7 @@ chardet==3.0.4
 click==7.1.2
 colorama==0.4.3
 confuse==1.1.0
-cv2-tools @ file:///C:/Users/DELL/Downloads/cv2_tools-2.4.0-py3-none-any.whl
+cv2-tools @ file:///C:/cv2_tools-2.4.0-py3-none-any.whl
 cycler==0.10.0
 decorator==4.4.2
 defusedxml==0.6.0
