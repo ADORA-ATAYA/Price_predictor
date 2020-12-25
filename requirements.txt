@@ -52,6 +52,7 @@ opencv-python==4.3.0.36
 pandas==1.0.3
 pandas-profiling==2.8.0
 pandocfilters==1.4.2
+PyMySQL==0.9.3
 PyYAML==5.3.1
 pyzmq==19.0.0
 qtconsole==4.7.1
