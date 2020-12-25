@@ -91,9 +91,7 @@ pyttsx3==2.7
 PyTweening==1.0.3
 pytz==2019.3
 PyWavelets==1.1.1
-pywin32==227
-pywinpty==0.5.7
-pywrap==0.1.0
+
 PyYAML==5.3.1
 pyzmq==19.0.0
 qtconsole==4.7.1
@@ -128,6 +126,3 @@ wcwidth==0.1.9
 webencodings==0.5.1
 Werkzeug==1.0.1
 whitenoise==5.2.0
-widgetsnbextension==3.5.1
-wikipedia==1.4.0
-wrapt==1.11.2
