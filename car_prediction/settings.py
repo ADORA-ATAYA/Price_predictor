@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'aoh7xmf()9vruw&g$220_u35-v@(58g9h$+5tc$08=hg!z9mj2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['carpricepredictor2.herokuapp.com/','localhost']
 
