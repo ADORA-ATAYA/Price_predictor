@@ -28,7 +28,7 @@ def show(request):
         #dbe.close()
 
 
-        car_data = pd.read_csv('E:/car_prediction/car_prediction/car_data.csv', index_col='car_ID')
+        car_data = pd.read_csv('car_data.csv', index_col='car_ID')
         data = car_data.copy(deep=True)
         col_drop = ['wheelbase', 'carlength', 'carwidth', 'carheight', 'curbweight', 'enginelocation']
         data = data.drop(columns=col_drop)
