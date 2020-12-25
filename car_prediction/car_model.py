@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 import numpy as np
-import pymysql as mysql
+#import pymysql as mysql
 from sklearn.model_selection import train_test_split
 import pandas as pd
 from sklearn import svm
@@ -20,12 +20,12 @@ def show(request):
     mpg = request.POST.get('mpg',False)
     h_mpg = request.POST.get('h-mpg',False)
     try:
-        dbe = mysql.connect(host="localhost", port=3306, user="root", password='9425starK@', db='cars')
-        cmd = dbe.cursor()
-        q = "insert into carsdata(Symboling,fueltype,enginesize,bore_ratio,stroke,c_ratio,horse_power,peak_rpm,city_mpg,highway_mpg) values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}')".format(symbol,fuel,e_size,b_ratio,stroke,c_ratio,h_power,rpm,mpg,h_mpg)
-        cmd.execute(q)
-        dbe.commit()
-        dbe.close()
+        #dbe = mysql.connect(host="localhost", port=3306, user="root", password='9425starK@', db='cars')
+        #cmd = dbe.cursor()
+        #q = "insert into carsdata(Symboling,fueltype,enginesize,bore_ratio,stroke,c_ratio,horse_power,peak_rpm,city_mpg,highway_mpg) values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}')".format(symbol,fuel,e_size,b_ratio,stroke,c_ratio,h_power,rpm,mpg,h_mpg)
+        #cmd.execute(q)
+        #dbe.commit()
+        #dbe.close()
 
 
         car_data = pd.read_csv('E:/car_prediction/car_prediction/car_data.csv', index_col='car_ID')
