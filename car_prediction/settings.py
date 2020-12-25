@@ -25,7 +25,7 @@ SECRET_KEY = 'aoh7xmf()9vruw&g$220_u35-v@(58g9h$+5tc$08=hg!z9mj2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['carpricepredictor2.herokuapp.com/','localhost']
+ALLOWED_HOSTS = ['http://carprice2.herokuapp.com/','localhost']
 
 
 # Application definition
