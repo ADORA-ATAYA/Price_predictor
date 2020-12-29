@@ -25,8 +25,7 @@ SECRET_KEY = 'aoh7xmf()9vruw&g$220_u35-v@(58g9h$+5tc$08=hg!z9mj2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://carprice2.herokuapp.com/','localhost']
-
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -41,7 +40,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -118,4 +116,4 @@ import os
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR,"staticfiles")
+#STATIC_ROOT = os.path.join(BASE_DIR,"staticfiles")
